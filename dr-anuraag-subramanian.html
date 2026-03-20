@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="">
+<head>	
 
-<head>
-	<title>Sanjivani Cancer Centre</title>
-<meta name="language" content="English">
-<meta name="revisit-after" content="7 days"> 
-	
+
+<title>Sanjivani Cancer Centre</title>
+<meta name="language" content="English">	
+	<!-- responsive tag -->
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
-	<link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
+	<link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">	
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/rsmenu-main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/rsmenu-transitions.css">
@@ -25,7 +26,34 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-style-responsive.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<SCRIPT language="JavaScript" src="assets/js/sanjivanicc_appointment.js" type="text/javascript"></SCRIPT>
+
+	<!-- Date And Time Picker -->
+	<script type="text/javascript" src="assets/datepicker/jquery-1.12.4.js"></script>
+	<link href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+	<script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			
+			$("#Appointment_Date").datepicker({
+				minDate: new Date(),
+				maxDate: new Date(new Date().setMonth(new Date().getMonth() + 2))
+			});
+			$("#Appointment_Date_new").datepicker({
+				minDate: new Date(),
+				maxDate: new Date(new Date().setMonth(new Date().getMonth() + 2))
+			});
+		});
+	</script>
+	<!-- //Date And Time Picker -->
+	
+
+<title>Sanjivani Cancer Centre</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7ZWP12WEP"></script>
 	<script>
@@ -36,58 +64,112 @@
 	  gtag('config', 'G-X7ZWP12WEP');
 	</script>
 </head>
-<body>
+<body class="home-page">
+	
+	<style>
+		
+		nav ul li a {
+			/* background-color: rgb(115, 25, 148); */
+			color: rgb(8, 2, 2) !important;
+			font-size: 15px !important;
+			
+			
+		}
+		@media (max-width: 768px) {
+         .nav-menu .logo-item {
+          display: none;
+    }
+  }
+	</style>
+<!-- whatsapp icon -->
+ <style>
+.whatsapp-float, .email-float {
+	position: fixed;
+	right: 38px;
+	bottom: 20px;
+	background-color: #25D366;
+	color: white;
+	font-size: 24px;
+	padding: 14px;
+	border-radius:50%;
+	text-align: center;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	transition: transform 0.3s ease;
+	text-decoration: none;
+  }
+  
+  /* Specific positions */
+  .whatsapp-float {
+	bottom: 160px;
+  }
+  
+  .email-float {
+	bottom: 90px;
+	background-color: #0072c6; /* Email blue */
+  }
+  
+  .whatsapp-float:hover, .email-float:hover {
+	transform: scale(1.3);
+	color: white;
+  }
+  
 
-<!--Full width header Start-->
-<div class="full-width-header personal-head">
-	<div class="rs-topbar-part">
-		<div class="container">
-			<div class="row rs-vertical-middle">
-				<div class="col-lg-4"></div>
-				<div class="col-lg-8">
-					<div class="topbar-sl-share text-right">
-						<ul class="icon-part">
-							<li class="date-part"><a href="tel:+91-8779475032"><i class="flaticon-call"></i>&nbsp; +91-8779475032 &nbsp;</a></li>
-							<li style="margin-right:60px;" class="md-hide"></li>
-							<li class="date-part"><a href="enquiry.html"><i class="flaticon-email"></i>&nbsp; care@sanjivanicancercentre.com &nbsp;</a></li>
-							<li style="margin-right:60px;" class="md-hide"></li>
+ </style>
+<a href="https://wa.me/918779475032" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+	<i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="mailto:dradityamanke@gmail.com" class="email-float" target="_blank" aria-label="Send Email">
+	<i class="fas fa-envelope"></i>
+  </a>
+<!-- whatsapp , email icon end -->  
+	<div class="full-width-header personal-head">
+		<!-- <div class="rs-topbar-part">
+			<div class="container">
+				<div class="row rs-vertical-middle">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-8">
+						<div class="topbar-sl-share text-right">
+							<ul class="icon-part">
+								<li class="date-part"><a href="tel:+91-8779475032"><i class="flaticon-call"></i>&nbsp; +91-8779475032 &nbsp;</a></li>
+								<li style="margin-right:60px;" class="md-hide"></li>
+								<li class="date-part"><a href="mailto:care@sanjivanicancercentre.com"><i class="flaticon-email"></i>&nbsp; care@sanjivanicancercentre.com &nbsp;</a></li>
+
+						</div>
+					</div>												
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="rs-toolbar-part">
+			<div class="container">
+				<div class="row rs-vertical-middle">
+					<div class="col-lg-3 col-sm-3 col-md-4">
+						<div class="logo-part">
+							<a href="/"><img src="https://sanjivanicancercentre.com/media/shop-167/sanjivani-cancer-centre/sanjivani-cancer-centre-5b45de.png" alt="logo" style="height: 100px; background: white; border-radius: 5px;"></a>
+						</div>
+					</div>
+					<div class="col-lg-9 col-sm-9 col-md-8 mobile-menu-area">
+						<ul class="rs-contact-info">
+							<li class="contact-part  no-border">
+								<a href="contact.html"><i class="flaticon-location"></i>
+									<span class="contact-info">
+										<span>1<sup>st</sup> Floor Rajesh CHS, Near Vandana <br>ST Stand, Naupada, Thane - 400602</span>
+									</span>
+								</a>
+							</li>
+							
+							<li class="contact-part no-border">
+								<span class="contact-info"><a class="readon header-btn" href="appointment.html">Book Appointment</a></span>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="rs-toolbar-part">
-		<div class="container">
-			<div class="row rs-vertical-middle">
-				<div class="col-lg-3 col-sm-3 col-md-4">
-					<div class="logo-part">
-						<a href="index.html"><img src="https://sanjivanicancercentre.com/media/shop-167/sanjivani-cancer-centre/sanjivani-cancer-centre-5b45de.png" alt="logo" style="height: 100px; background: white; border-radius: 5px;"></a>
-					</div>
-				</div>
-				<div class="col-lg-9 col-sm-9 col-md-8 mobile-menu-area">
-					<ul class="rs-contact-info">
-						<li class="contact-part  no-border">
-							<a href="contact.html"><i class="flaticon-location"></i>
-								<span class="contact-info">
-									<span>1<sup>st</sup> Floor Rajesh CHS, Near Vandana <br>ST Stand, Naupada, Thane - 400602</span>
-								</span>
-							</a>
-						</li>
-						<!-- <li class="contact-part no-border success">
-							<a href="success-stories.html"><img src="images/stories.png" class="success-btn"></a>
-						</li> -->
-						<li class="contact-part no-border">
-							<span class="contact-info"><a class="readon header-btn" href="appointment.html">Book Appointment</a></span>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--toolbar-part-end-->
-	<!--Header Start-->
-	<style>
+		</div> -->
+		<!--toolbar-part-end-->
+		<!--Header Start-->
+		<style>
 		nav ul {
       background-color: rgb(115, 25, 148) !important;
       color: rgb(252, 250, 250) !important;
@@ -249,14 +331,14 @@
 			</div>
 		</header>
 	</div>
-</div>
+	</div>
 <!--Full width header End-->
 
 	<!--breadcrumbs-inner-part start-->
 	<div class="breadcrumbs-inner-part img2">
 		<div class="container">
 			<div class="breadcrumbs-inner-bread text-center">
-				<h1 class="title-part">Dr. Anuraag Subramanian</h1>
+				<h1 class="title-part">Dr. Aditya Manke</h1>
 				<div class="sec-title text-center">
 					<div class="desc center-line secondary">						
 					</div>
@@ -276,13 +358,13 @@
         <div class="row">
             <div class="col-lg-4 col-md-12">
                 <div class="inner-images mb-40 md-mb-30 text-center">
-                    <img src="images/team/dr-anuraag.jpg" alt="Sanjivani Cancer Centre">
+                    <img src="images/team/dr-kiran.jpg" alt="Sanjivani Cancer Centre">
                     <div class="ps-informations">
-                        <h2 class="single-title text-center">Dr. Anuraag Subramanian</h2>
+                        <h2 class="single-title text-center">Dr. Kiran Tamkhane</h2>
                     </div>
                     <div class="ps-information2">
                         <ul class="social-icon">
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.facebook.com/sccmumbai" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                             <li> <a href="#"><i class="fa fa-skype"></i></a></li>
@@ -311,76 +393,58 @@
             </div>
             <div class="col-lg-8 pr-45 col-md-12 md-pl-15 md-pr-15">
                 <div class="project-desc mb-40 md-mb-30">
-                    <h3 class="title-gray mb-30 md-mb-20">About Dr. Anuraag Subramanian</h3>
+                    <h3 class="title-gray mb-30 md-mb-20">About Dr. Kiran Tamkhane</h3>
                     <div class="content-part">
                         <div class="desc-part mb-20">
-                            <h5 class="highlight-title">Head & Neck Onco Surgeon</h5>
-							<h5>MDS Oral & Maxillofacial Surgery.<br>
-								Fellowship in Head & Neck Oncosurgery.</h5>
+                            <h5 class="highlight-title">Specialization: Medical Oncologist (Cancer Specialist)</h5>
+                            <h5>MBBS – B.J. Medical College, Pune
+
+DNB – Internal Medicine (Narayana Hrudayalaya, Bangalore)
+
+DrNB – Medical Oncology (Medanta Medicity, Gurugram)
+
+MNAMS (Oncology)</h5>
                             <hr>
-                            <h5 style="font-weight: 400;">
-								Specialized in treating patients with cancer in the Head & Neck region.<br>
-								Well-skilled in performing ablations of complex tumours in the oral cavity & neck dissections. 
-                            </h5>
-                        </div>
+                            <h5 style="font-weight: 500;">
+                                <b>Treatment Methods</b>
+							
+                            <div class="wap-text-column sub-main-section">
+								<ul class="chevron-right-icon">
+									<li>
+									Chemotherapy
+									</li>
+									<li>
+										Immunotherapy
+									</li>
+									<li>
+										Targeted therapy
+									</li>
+									<li>
+										Hormonal therapy
+									</li>
+								</ul>
+							</div>
+							</h5>
+							
+						</div>
                     </div>
                     
                 </div>
-                <div class="project-desc inner-content-part mb-40 md-mb-30">
-                    <h3 class="title-gray mb-0 md-mb-15">Surgical Expertise </h3>
-                    <ul class="Service-menu highlighted-box angle-right-icon" style="background-color: #fff;">
-                        <li>
-                            Skull base surgeries.
-                        </li>
-                        <li>
-                            Trans-Oral Robotic Surgeries.
-                        </li>
-                        <li>
-                            Microvascular free flap reconstructions.
-                        </li>
-                        <li>
-                            Ablations of complex tumours in the oral cavity & neck dissections.
-                        </li>
-                        <li>
-                            Thyroidectomies for malignant thyroid diseases.
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="project-desc inner-content-part mb-40 md-mb-30">
-                    <h3 class="title-gray mb-0 md-mb-15">Other Specialities </h3>
-                    <ul class="Service-menu highlighted-box angle-right-icon" style="background-color: #fff;">
-                        <li>
-                            Surgical management of Maxillofacial Trauma.
-                        </li>
-                        <li>
-                            Implants in the Maxillofacial region.
-                        </li>
-                        <li>
-                            Benign tumour resections & cystic enucleations.
-                        </li>
-                      
-                    </ul>
-                </div>
-                
-                <div class="project-desc mb-40 md-mb-30">
-                    <h3 class="title-gray mb-15 md-mb-15">Experience</h3>
+				<div class="project-desc mb-40 md-mb-30">
+                    <h3 class="title-gray mb-15 md-mb-15">Experience & Background</h3>
                     <div class="team-detail-wrap">
                         <div class="row">
 							<div class="col-lg-12">
 								<div class="wap-text-column">
 									<ul class="chevron-right-icon">
 										<li>
-											<b>Dr. Anuraag</b> is trained in thyroidectomies for malignant thyroid diseases.
+											Previously worked at Nanavati Hospital, Mumbai.
                                         </li>
                                         <li>
-                                            Well experienced in performing orbital exenterations for tumours of the eye. 
-                                        </li>
-                                        <li>
-                                            He has dynamic modes of reconstructions for head & neck defects through various locoregional flaps.
-                                        </li>
-                                        <li>
-                                            He has keen interest in Skull base surgeries, Trans-Oral Robotic Surgeries & Microvascular free flap reconstructions.
+                                            Handles complex cancer cases.
+										<li>
+                                           Also involved in research (published oncology studies).
                                         </li>
 									</ul>
 								</div>
@@ -389,7 +453,86 @@
 						</div>
                     </div>
                 </div>
+
+                <div class="project-desc inner-content-part mb-40 md-mb-30">
+                    <h3 class="title-gray mb-0 md-mb-15">Surgical Expertise </h3>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="wap-text-column">
+								<ul class="chevron-right-icon">
+									<li style="margin-bottom:15px;">
+										<h5 class="mb-5">He treats a wide range of cancers.</h5>
+										<!-- <b>Robotic cancer surgery</b> offers precision and accuracy in complex cases. Dr Manke is one of the few surgeons across the country named on both the lntutive's Da Vinci robotic system as well as the CMR Versius system.  -->
+									</li>
+									<li style="margin-bottom:15px;">
+										<h5 class="mb-5">Blood cancers (Lymphoma, Leukemia, Myeloma).</h5>
+										<!-- <b>Laparoscopic Cancer Surgery</b> or Minimal invasive surgery cancer is beneficial for patients due to small incisions, less pain & early recovery resulting in shorter stay. Dr. Menke has experience of managing various types of abdominal & thoracic cancers in laparoscopic approach.  -->
+									</li>
+									<li style="margin-bottom:15px;">
+										<h5 class="mb-5">Breast cancer, lung cancer.</h5>
+										<!-- IP chemotherapy is a new treatment for advanced cancers of the abdomen Dr Manke was trained in this novel technique at Europe's leading cancer centre. The Christie NHS foundation trust at Manchester UK.  -->
+									</li>
+									<li style="margin-bottom:15px;">
+										<h5 class="mb-5">Gastrointestinal (GI) cancers.</h5>
+										<!-- Surgery and tumor removal is the mainstay of any solid cancer management. Dr Manke is well versed with all aspects of complex open cancer surgeries. -->
+									</li>
+									<li style="margin-bottom:15px;">
+										<h5 class="mb-5">Head & neck cancers.</h5>
+										<!-- &#10095;&nbsp; STRYKER1488 3 Chip CMOS HD <br>
+										&#10095;&nbsp; Camera for superior vision <br>
+										&#10095;&nbsp; Advanced Bipolar energy device for less cloud loss <br>
+										&#10095;&nbsp; Experience of 500, successful laparoscopic cancer surgeries -->
+									</li>
+									<li style="margin-bottom:15px;">
+										<h5 class="mb-5">Liver, prostate, gynecological cancers.</h5>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+                    <!--<ul class="Service-menu highlighted-box angle-right-icon" style="background-color: #fff;">
+                        <li>
+                            Robotic Assisted Cancer Surgery
+							
+                        </li>
+                        <li>
+                            Laparoscopic Cancer Surgery
+							
+                        </li>
+                        <li>
+                            Open Cancer Surgery
+                        </li>
+                        <li>
+                            Complex Hepatobiliary And Pancreatic Surgeries Cytoreductive Surgery For Peritoneal Surface Disease</a>
+                        </li>
+                        <li>
+                            Heated Intraperitoneal Chemotherapy (HIPEC)
+							
+                        </li>
+                    </ul>-->
+                </div>
                 
+                <div class="project-desc mb-40 md-mb-30">
+                    <h3 class="title-gray mb-15 md-mb-15">Education</h3>
+                    <div class="team-detail-wrap">
+                        <div class="row">
+							<div class="col-lg-12">
+								<div class="wap-text-column">
+									<ul class="chevron-right-icon">
+										MBBS – B.J. Medical College, Pune
+
+DNB – Internal Medicine (Narayana Hrudayalaya, Bangalore)
+
+DrNB – Medical Oncology (Medanta Medicity, Gurugram)
+
+MNAMS (Oncology
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+                    </div>
+                </div>
                 
             </div>
             
@@ -413,7 +556,7 @@
 										href="enquiry.html">care@sanjivanicancercentre.com</a></li>
 								<li><i class="fa fa-mobile"></i><a href="contact.html">+91-8779475032</a>
 								</li>
-								<li><i class="fa fa-clock-o"></i>09:00 AM - 10:00 PM</li>
+								
 							</ul>
 						</div>
 						<br/>
@@ -424,6 +567,9 @@
 								<li><i class="fa fa-globe"></i><a href="contact.html">Mira Road</a></li>
                                 <li><i class="fa fa-globe"></i><a href="contact.html">Vashi</a></li>
 								<li><i class="fa fa-globe"></i><a href="contact.html">Malad</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Badlapur</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Thane</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Chembur</a></li>
                             </ul>
 						</div>
                     </div>
@@ -510,9 +656,7 @@
 								<ul>
 									<li><i class="fa fa-globe"></i>Kalpataru Hospital,<br>First Floor, Ashoka Shopping Centre,<br>Near Jakat Naka Signal,<br> Virar West.</li>
 									<li><i class="fa fa-envelope"></i><a href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i>+91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>TUE & SAT</li>
-									<li><i class="fa fa-clock-o"></i>10:00 AM - 12:00 PM</li>
+									<li><i class="fa fa-phone"></i>+91-8779475032</li>
 								</ul>
 							</div>
 						</div>
@@ -524,9 +668,7 @@
  								<ul>
 									<li><i class="fa fa-globe"></i>Dhanwantari Manav Kalyan Hospital,<br>Ganesh Tower, B Patil Road, <br>Venkateshwar Nagar, Bhayander East,<br>Mira Bhayender - 401105.</li>
 									<li><i class="fa fa-envelope"></i><a href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat  </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
 								</ul>
 							</div>
 						</div>
@@ -538,9 +680,7 @@
  								<ul>
 									<li><i class="fa fa-globe"></i>Vashi Hospital and ICU 1 St Floor, <br>Above Babubhai Jagjivandas. <br>Devavrata Premises, Sector 17, <br>Vashi, Navi Mumbai - 400703.</li>
 									<li><i class="fa fa-envelope"></i><a href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat  </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
 								</ul>
 							</div>
 						</div>
@@ -552,10 +692,72 @@
  								<ul>
 									<li><i class="fa fa-globe"></i>DNA hospital, Rani Sati Rd, <br>Malad, Tapovan Housing Complex, <br>Pathan Wadi, Malad East, Mumbai 400097.</li>
 									<li><i class="fa fa-envelope"></i><a href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat  </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
 								</ul>
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Badlapur</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>New Dhanvantari Hospital, <br>567Q+MPG, near Registration Office
+										, <br>Surya Nagar, Katrap, Badlapur, Maharashtra 421503.</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Mira Road</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>Shree Mahalaxmi Hospital,<br>Ramdev Park, Mira Road East, <br>Mira Bhayandar,<br>Maharashtra 401105.
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Thane</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>VRINDAVAN HOSPITAL,<br> DEVASHREE GARDEN, 101&102, <br>Service Rd,<br>Rutu Park, Panchsheel Nagar, Thane West, Thane, Maharashtra 400601
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Chembur</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>Surana Sethia Hospital,<br> Sion - Trombay Rd, Suman Nagar, <br>Chembur,<br>Mumbai, Maharashtra 400071.
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
 							</div>
 						</div>
 					</div>
