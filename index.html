@@ -119,6 +119,70 @@
 			transform: scale(1.3);
 			color: white;
 		}
+		/* .row{
+			border: 2px solid red;
+		} */
+		 .event-image-con{
+  padding:20px 40px;
+}
+
+.event-image-con h3{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.image-main-con{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:15px;
+}
+
+.img{
+  height:300px;
+  background-size:cover;
+  background-position:center;
+  border-radius:8px;
+}
+
+/* images */
+.img1{
+  background-image:url("http://127.0.0.1:5500/build/images/events/20Mar2022MiraBhayanderConf2.jpg");
+
+}
+.img2{
+  background-image:url("http://127.0.0.1:5500/build/images/events/pudhari-news/sanjivani-pudhari-award-4.webp");
+}
+.img3{
+  background-image:url("http://127.0.0.1:5500/build/images/events/pudhari-news/sanjivani-pudhari-award-3.webp");
+}
+.img4{
+  background-image:url("http://127.0.0.1:5500/build/images/events/pudhari-news/sanjivani-pudhari-award-2.webp");
+}
+.img5{
+  background-image:url("http://127.0.0.1:5500/build/images/events/dussehra-talk/dussehra6.webp");
+}
+.img6{
+	background-image: url("http://127.0.0.1:5500/build/images/events/26%20JAn%202023-5.jpeg");
+}
+
+/* Tablet */
+@media (max-width:900px){
+  .image-main-con{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width:500px){
+  .image-main-con{
+    grid-template-columns: 1fr;
+  }
+
+  .img{
+    height:200px;
+  }
+}
+	
 	</style>
 	
 </head>
@@ -255,6 +319,7 @@
 	</div>
 	<!--Full width header End-->
 
+
 	<!-- Slider Section start -->
 	<div id="rs-slider" class="rs-slider home-slider">
 		<div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="0" data-autoplay="true"
@@ -313,7 +378,38 @@
 								<a class="readon transparent" href="appointment.html">Appointment</a>
 							</div>
 						</div>
-						<!-- <div class="img-part hidden-md">
+					 <!-- <div class="img-part hidden-md">
+							<img src="images/manke3.jpg" alt="Sanjivani Cancer Centre" style="width: 650px;">
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="single-slide slide2">
+					<div class="container">
+						<div class="content-part">
+							<div class="tags-part wh">
+								<div class="title-part">
+									<h3>Best medical center</h3>
+									<h2 style="color: white;">Specialized Surgeries</h2>
+								</div>
+								<div class="desc-part">
+									<i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;Robotic Cancer Surgery
+									<br>
+									<i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;Laparoscopic Cancer Surgery <br>
+									<i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;Head & Neck Reconstructive
+									Surgery<br>
+									<i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;Oncoplastic Breast Surgery<br>
+									<i class="fa fa-angle-double-right"></i>&nbsp;&nbsp;Heated Intraperitoneal
+									Chemotherapy (HIPEC)
+
+								</div>
+							</div>
+							<div class="btn-part">
+								<a class="readon transparent" href="appointment.html">Appointment</a>
+							</div>
+						</div>
+					 <!-- <div class="img-part hidden-md">
 							<img src="images/manke3.jpg" alt="Sanjivani Cancer Centre" style="width: 650px;">
 						</div> -->
 					</div>
@@ -330,7 +426,7 @@
 				<div class="col-lg-6 col-12 pr-25 md-col-gap md-mb-30">
 					<div class="rs-best-medical-part">
 						<div class="img-part">
-							<img src="images/about.png" alt="Sanjivani Cancer Centre" style="width:100%;">
+							<img src="images/about.jpeg" alt="Sanjivani Cancer Centre" style="width:100%;">
 							<div class="play-btn">
 								<a class="pulse-btn" href="https://www.youtube.com/channel/UCHxlhW-sxyLmqq4BX0JOt7w"
 									target="_blank"><i class="fa fa-play"></i></a>
@@ -719,7 +815,7 @@
 				<div class="col-lg-6 d-flex align-items-center">
 					<div>
 						<a href="dr-aditya-manke.html">
-							<img src="images/team/dr-aditya.jpg" alt="Sanjivani Cancer Centre" class="img-fluid mb-3"
+							<img src="images/team/dr-aditiya.jpg" alt="Sanjivani Cancer Centre" class="img-fluid mb-3"
 								style="height: 450px;">
 						</a>
 						<div class="normal-text ">
@@ -784,6 +880,27 @@
 
 		</div>
 	</div>
+
+<!--Event Images-->
+
+<div class="event-image-con">
+  <h3>
+    Dr Aditya Manke was honoured with "Health Icon" award organized by
+    Pudhari Newspaper at Palghar district on the occasion of Independence day.
+  </h3>
+
+  <div class="image-main-con">
+    <div class="img img1"></div>
+    <div class="img img2"></div>
+    <div class="img img3"></div>
+    <div class="img img4"></div>
+    <div class="img img5"></div>
+    <div class="img img6"></div>
+  </div>
+</div>
+
+
+
 
 	<!--rs-happy-patients-part2 start-->
 	<div class="rs-happy-patients-part style2 bg3 take-up pt-130  pb-180 md-pb-160 md-pt-80">
@@ -876,26 +993,22 @@
 						<h3 class="title pb-15">Our Partners</h3>
 						<div class="desc center-line secondary"></div>
 					</div>
-					<div class="rs-carousel owl-carousel white-dots" data-loop="true" data-items="4" data-margin="40"
+					<div class="rs-carousel-1">
+						<!-- data-loop="true" data-items="4" data-margin="40"
 						data-autoplay="true" data-autoplay-timeout="7000" data-smart-speed="800" data-dots="true"
 						data-nav="true" data-nav-speed="false" data-center-mode="false" data-mobile-device="1"
 						data-mobile-device-nav="true" data-mobile-device-dots="false" data-ipad-device="3"
 						data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="2"
 						data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="4"
-						data-md-device-nav="true" data-md-device-dots="true">
-						<div class="item">
+						data-md-device-nav="true" data-md-device-dots="true"> -->
+							<div class="item">
 							<div class="img-part">
-								<img src="images/partner/Reliance-Hospital.jpg" alt="Sanjivani Cancer Centre">
+								<img src="images/partner/oscar.jpg" alt="Sanjivani Cancer Centre" style="height: 20vh; margin-top: 20px; ">
 							</div>
 						</div>
 						<div class="item">
 							<div class="img-part">
-								<img src="images/partner/Currae.jpg" alt="Sanjivani Cancer Centre">
-							</div>
-						</div>
-						<div class="item">
-							<div class="img-part">
-								<img src="images/partner/mgm.jpg" alt="Sanjivani Cancer Centre">
+								<img src="images/partner/hcg.jpg" alt="Sanjivani Cancer Centre">
 							</div>
 						</div>
 						<div class="item">
@@ -903,10 +1016,11 @@
 								<img src="images/partner/Apex-Hospital.jpg" alt="Sanjivani Cancer Centre">
 							</div>
 						</div>
+<!-- 					
 						<div class="item">
-							<div class="img-part">
+						<div class="img-part">
 								<img src="images/partner/ACI.jpg" alt="Sanjivani Cancer Centre">
-							</div>
+							</div> 
 						</div>
 						<div class="item">
 							<div class="img-part">
@@ -921,11 +1035,6 @@
 						<div class="item">
 							<div class="img-part">
 								<img src="images/partner/mahavir.jpg" alt="Sanjivani Cancer Centre">
-							</div>
-						</div>
-						<div class="item">
-							<div class="img-part">
-								<img src="images/partner/Oscar-Hospital.jpg" alt="Sanjivani Cancer Centre">
 							</div>
 						</div>
 						<div class="item">
@@ -952,7 +1061,7 @@
 							<div class="img-part">
 								<img src="images/partner/Wockhardt-Mira-Road.jpg" alt="Sanjivani Cancer Centre">
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -1083,7 +1192,7 @@
 										href="enquiry.html">care@sanjivanicancercentre.com</a></li>
 								<li><i class="fa fa-mobile"></i><a href="contact.html">+91-8779475032</a>
 								</li>
-								<li><i class="fa fa-clock-o"></i>09:00 AM - 10:00 PM</li>
+							
 							</ul>
 						</div>
 						<br />
@@ -1096,6 +1205,9 @@
 								<li><i class="fa fa-globe"></i><a href="contact.html">Mira Road</a></li>
 								<li><i class="fa fa-globe"></i><a href="contact.html">Vashi</a></li>
 								<li><i class="fa fa-globe"></i><a href="contact.html">Malad</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Badlapur</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Thane</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Chembur</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1231,9 +1343,8 @@
 										Centre,<br>Near Jakat Naka Signal,<br> Virar West.</li>
 									<li><i class="fa fa-envelope"></i><a
 											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i>+91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>TUE & SAT</li>
-									<li><i class="fa fa-clock-o"></i>10:00 AM - 12:00 PM</li>
+									<li><i class="fa fa-phone"></i>+91-8779475032</li>
+									
 								</ul>
 							</div>
 						</div>
@@ -1250,13 +1361,12 @@
 									</li>
 									<li><i class="fa fa-envelope"></i><a
 											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
-								</ul>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
 							</div>
 						</div>
 					</div>
+				
 					<div class="item">
 						<div class="img-part">
 							<div class="footer-title mb-10">
@@ -1269,9 +1379,7 @@
 									</li>
 									<li><i class="fa fa-envelope"></i><a
 											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
 								</ul>
 							</div>
 						</div>
@@ -1287,10 +1395,72 @@
 										Housing Complex, <br>Pathan Wadi, Malad East, Mumbai 400097.</li>
 									<li><i class="fa fa-envelope"></i><a
 											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
 								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Badlapur</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>New Dhanvantari Hospital, <br>567Q+MPG, near Registration Office
+										, <br>Surya Nagar, Katrap, Badlapur, Maharashtra 421503.</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Mira Road</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>Shree Mahalaxmi Hospital,<br>Ramdev Park, Mira Road East, <br>Mira Bhayandar,<br>Maharashtra 401105.
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Thane</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>VRINDAVAN HOSPITAL,<br> DEVASHREE GARDEN, 101&102, <br>Service Rd,<br>Rutu Park, Panchsheel Nagar, Thane West, Thane, Maharashtra 400601
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Chembur</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>Surana Sethia Hospital,<br> Sion - Trombay Rd, Suman Nagar, <br>Chembur,<br>Mumbai, Maharashtra 400071.
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
 							</div>
 						</div>
 					</div>
@@ -1320,7 +1490,6 @@
 		<i class="fa fa-angle-up"></i>
 	</div>
 	<!-- Scrool to Top End -->
-
 	<!-- modernizr js -->
 	<script src="assets/js/modernizr-2.8.3.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -1345,7 +1514,6 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 		})();
 	</script>
-
 </body>
 
 </html>

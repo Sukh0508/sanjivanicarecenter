@@ -128,7 +128,7 @@ li {
 a {
   text-decoration: none;
   outline: none;
-  color: #0b2ba7;
+  /* color: #0b2ba7; */
   transition: all 0.3s ease 0s;
 }
 i:before {
@@ -137,6 +137,7 @@ i:before {
 a:hover {
   text-decoration: none;
   color: #0b2ba7;
+  
 }
 /* -----------------------------------
     02. Common Section CSS
@@ -889,9 +890,9 @@ a:hover {
   line-height: 24px !important;
   transition: all 0.3s ease 0s;
 }
-.full-width-header .rs-header .menu-area .main-menu .rs-menu .sub-menu li a:hover {
-  color: #0b2ba7 !important;
-}
+/* .full-width-header .rs-header .menu-area .main-menu .rs-menu .sub-menu li a:hover {
+  color: #0b2ba7 !important; 
+} */
 .full-width-header .rs-header .menu-area .main-menu .rs-menu .sub-menu li:last-child {
   margin: 0;
 }
@@ -1814,7 +1815,7 @@ a:hover {
   right: 15px;
 }
 
-.rs-slider.home7slider .owl-carousel {
+/* .rs-slider.home7slider .owl-carousel {
   padding-top: 0;
 }
 .rs-slider.home7slider .owl-carousel .owl-nav [class*="owl-"] {
@@ -1833,8 +1834,8 @@ a:hover {
   opacity: 0 !important;
   visibility: hidden !important;
   transition: all 0.3s ease 0s;
-}
-.rs-slider.home7slider .owl-carousel .owl-nav [class*="owl-"] i {
+} */
+/* .rs-slider.home7slider .owl-carousel .owl-nav [class*="owl-"] i {
   font-size: 0;
 }
 .rs-slider.home7slider .owl-carousel .owl-nav [class*="owl-"].owl-prev {
@@ -1846,8 +1847,8 @@ a:hover {
 .rs-slider.home7slider .owl-carousel .owl-nav [class*="owl-"]:hover {
   background-color: #0b2ba7;
   color: #ffffff;
-}
-.rs-slider.home7slider .owl-carousel:hover [class*="owl-"] {
+} */
+/* .rs-slider.home7slider .owl-carousel:hover [class*="owl-"] {
   opacity: 1 !important;
   visibility: visible !important;
 }
@@ -1856,7 +1857,7 @@ a:hover {
 }
 .rs-slider.home7slider .owl-carousel:hover [class*="owl-"] .owl-next {
   right: 0;
-}
+} */
 
 .rs-slider .rs-slider-part .content-part {
   padding: 200px 60px 200px;
@@ -4031,20 +4032,37 @@ a:hover {
 .rs-partner-part {
   position: relative;
   z-index: 1;
+  /* border: 2px solid red; */
 }
-.rs-partner-part .owl-stage-outer {
+.rs-carousel-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* background-color: #000000; */
+}
+@media (max-width:650px) {
+  .rs-carousel-1{
+    flex-direction: column;
+  }
+  
+}
+/* .rs-partner-part .rs-ca {
   padding-bottom: 0 !important;
-}
+  border: 2px solid green;
+} */
 .rs-partner-part .images-part {
   background: #021b79;
   padding: 50px 0 50px;
   border-radius: 8px;
+  /* border: 2px solid gold; */
 }
 .rs-partner-part .images-part .item .img-part img {
   width: auto;
-  height: auto;
+  height: 180px;
   max-width: 100%;
   margin: 0 auto;
+  /* border: 2px solid palevioletred; */
 }
 .rs-partner-part.part1 {
   background: #021b79;

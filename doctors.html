@@ -76,6 +76,8 @@
 			
 			
 		}
+		
+		
 		@media (max-width: 768px) {
          .nav-menu .logo-item {
           display: none;
@@ -216,7 +218,107 @@
 	transform: scale(1.3);
 	color: white;
   }
-  
+  /* Doctor Card */
+.doctor-card{
+    border:1px solid #eee;
+    border-radius:8px;
+    overflow:hidden;
+    background:#fff;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Image */
+.doctor-img img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+/* Content */
+.doctor-content{
+    padding:20px;
+    text-align:center;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+	/* align-items: center; */
+    justify-content:space-between;
+}
+
+.doctor-name{
+    font-size:20px;
+    font-weight:600;
+}
+
+.doctor-name a{
+    text-decoration:none;
+    color:#000;
+}
+
+.doctor-speciality{
+    color:#555;
+    font-size:15px;
+    margin-top:5px;
+}
+
+.doctor-degree{
+    font-size:14px;
+    color:#777;
+    margin-top:10px;
+}
+
+/* Button */
+.read-btn{
+    display:inline-block;
+    padding:8px 22px;
+    background:#731994;
+    color:#fff;
+    border-radius:5px;
+    text-decoration:none;
+    margin-top:15px;
+}
+
+.read-btn:hover{
+    background: transparent;
+}
+
+/* Tablet */
+@media (max-width:991px){
+
+.doctor-img img{
+    height:220px;
+}
+
+.doctor-name{
+    font-size:18px;
+}
+
+}
+
+/* Mobile */
+@media (max-width:576px){
+
+.doctor-img img{
+    height:200px;
+}
+
+.doctor-content{
+    padding:15px;
+}
+
+.doctor-degree{
+    font-size:13px;
+}
+
+.read-btn{
+    padding:7px 18px;
+    font-size:14px;
+}
+
+}
 
  </style>
 <a href="https://wa.me/918779475032" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
@@ -356,40 +458,39 @@
 	<!--rs-meet-with-doctor-part start-->
 	<div class="rs-meet-with-doctor-part part2 pt-80 pb-80 md-pt-60 md-pb-50">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="display: flex; justify-content: center; gap: 20px;">
 				
-				<div class="col-lg-4 col-md-6 m-auto shadow">
-					<div class="item">
-						<div class="team-inner">
-							<div class="img-part">
-									
-								<div class="text-area">
-                                    <img src="images/team/dr-aditya.jpg" alt="Sanjivani Cancer Centre">
-									<div class="normal-text text-center">
-										<h3 class="team-name">
-											<a href="dr-aditya-manke.html">Dr. Aditya Manke</a>
-										</h3>
-										<div class="cat-doctor nolink">
-                                            <span>Robotic & Laparoscopic<br>
-                                                 Onco Surgeon</span>
-										</div>
-									</div>
-                                    <p class="text-center mt-20">
-                                        <b>MCh Surg Onc (UK), FNB (MAS), FEBS (Surg Onc), FRCSEd (UK), MS Fellowship in Robotic Oncosurgery and HIPEC (UK)</b><br>
-                                        <!-- <a href="#" class="pg-link pt-10">Read More <i class="fa fa-angle-double-right"></i></a> -->
-                                        <div class="btn-part mt-20 text-center">
-                                            <b><a class="readon white-btn" href="dr-aditya-manke.html">Read More</a></b>
-                                        </div>
-                                    </p>
-								</div>
-							</div>							
-						</div>
-					</div>
+				   <div class="col-lg-4 col-md-6 col-12 doctor-col">
+        <div class="doctor-card">
+
+            <div class="doctor-img">
+                <img src="https://sanjivanicancercentre.com/media/shop-167/team-None/dr-mukesh-chandre-919d1f.jpg" alt="Sanjivani Cancer Centre">
+            </div>
+
+            <div class="doctor-content">
+                <h3 class="doctor-name">
+                    <a href="dr-mukesh.html">Dr. Mukesh Chandre</a>
+                </h3>
+
+                <div class="doctor-speciality">
+                   Clinical Oncologist
                 </div>
 
-				
+                <p class="doctor-degree">
+                  Experienced Oncologist with over 11 years in Radiation Oncology patient-focused approach and continues to provide compassionate, advanced cancer care
+                </p>
+
+                <div class="doctor-btn">
+                    <a href="dr-mukesh.html" class="read-btn">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
                 
-               <!--  <div class="col-lg-4 col-md-6 mb-30">
+                <!-- <div class="col-lg-4 col-md-6 mb-30">
 					<div class="item">
 						<div class="team-inner">
 							<div class="img-part">
@@ -416,34 +517,66 @@
 					</div>
 				</div>  -->
 				
-				<!-- <div class="col-lg-4 col-md-6 mb-30">
-					<div class="item">
-						<div class="team-inner">
-							<div class="img-part">
-									
-								<div class="text-area">
-                                    <img src="images/team/dr-anuraag.jpg" alt="Sanjivani Cancer Centre">
-									<div class="normal-text text-center">
-										<h3 class="team-name">
-											<a href="dr-anuraag-subramanian.html">Dr. Anuraag Subramanian</a>
-										</h3>
-										<div class="cat-doctor nolink">
-                                            <span>Head & Neck Onco Surgeon<br/><br/></span>
-										</div>
-									</div>
-                                    <p class="text-center mt-20">
-                                        <b>MDS Oral & Maxillofacial Surgery.  Fellowship in Head & Neck Oncosurgery.</b><br>
-                                        <a href="#" class="pg-link pt-10">Read More <i class="fa fa-angle-double-right"></i></a>
-                                        <div class="btn-part mt-20 text-center">
-                                            <b><a class="readon white-btn" href="dr-anuraag-subramanian.html">Read More</a></b>
-                                        </div>
-                                    </p>
-								</div>
-							</div>							
-						</div>
-					</div>
-				</div> -->
+				<div class="col-lg-4 col-md-6 col-12 doctor-col">
+        <div class="doctor-card">
+
+            <div class="doctor-img">
+                <img src="images/team/dr-aditiya.jpg" alt="Sanjivani Cancer Centre">
+            </div>
+
+            <div class="doctor-content">
+
+                <h3 class="doctor-name">
+                    <a href="dr-aditya-manke.html">Dr. Aditya Manke</a>
+                </h3>
+
+                <div class="doctor-speciality">
+                    Robotic & Laparoscopic Onco Surgeon
+                </div>
+
+                <p class="doctor-degree">
+                    MCh Surg Onc (UK), FNB (MAS), FEBS (Surg Onc), FRCSEd (UK), MS Fellowship in Robotic Oncosurgery and HIPEC (UK)
+                </p>
+
+                <div class="doctor-btn">
+                    <a href="dr-aditya-manke-old.html" class="read-btn">Read More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 				
+						<div class="col-lg-4 col-md-6 col-12 doctor-col">
+        <div class="doctor-card">
+
+            <div class="doctor-img" style="background-size: 100% 100%; background-position: bottom;">
+                <img src="images/team/dr-kiran.jpg" alt="Sanjivani Cancer Centre">
+            </div>
+
+            <div class="doctor-content">
+
+                <h3 class="doctor-name">
+                    <a href="dr-aditya-manke.html">Dr. Kiran Tamkhane</a>
+                </h3>
+
+                <div class="doctor-speciality">
+                    Medical Oncologist (Cancer Specialist)
+                </div>
+
+                <p class="doctor-degree">
+                    Medical Oncologist (Cancer Specialist) Experience 10+ years
+                </p>
+
+                <div class="doctor-btn">
+                    <a href="dr-kiran.html" class="read-btn">Read More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 				<!-- <div class="col-lg-4 col-md-6 mb-30">
 					<div class="item">
 						<div class="team-inner">
@@ -476,12 +609,79 @@
         </div>
     </div>
 
+	<!--OUR TEAM CSS-->
+
+	<style>
+.our-team{
+    height: 80vh;
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: 20px auto;
+    position: relative;
+}
+
+.our-team h1{
+    text-align: center;
+}
+
+.team-image{
+    /* border: 2px solid green; */
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+
+ .team-1{
+    /* border: 2px solid gold; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+
+    background-size: cover;
+  
+    background-repeat: no-repeat;
+}
+@media (max-width:768px){
+
+.our-team{
+    width:95%;
+    height:60vh;
+}
+
+.team-image{
+    height:100%;
+}
+
+.team-1{
+    background-size: cover;
+    background-position: center;
+}
+
+}
+
+	
+	</style>
+
+	<section class=" our-team">
+		<h1>Our team</h1>
+		<div class="team-image">
+			<div class="team-1" style="background-image: url(./images/team/ourteam.jpeg) ;   background-position: center;"></div>
+			<div class="team-1" style="background-image: url(./images/team/ourteam2.jpg);  background-size: 100% 100%;"></div>
+			<div class="team-1" style="background-image: url(./images/team/ourteam3.jpg);  background-size: 100% 100%;"></div>
+			<div class="team-1" style="background-image: url(./images/team/ourteam4.jpg);  background-size: 100% 100%;"></div>
+		
+		</div>
+
+	</section>
+
 	<style>
 		body {
 		  font-family: Arial, sans-serif;
 		  background: #f4f4f4;
 		  margin: 0;
-		  padding: 20px;
+		  /* padding: 20px; */
 		}
 	
 		h2 {
@@ -572,7 +772,6 @@
 										href="enquiry.html">care@sanjivanicancercentre.com</a></li>
 								<li><i class="fa fa-mobile"></i><a href="contact.html">+91-8779475032</a>
 								</li>
-								<li><i class="fa fa-clock-o"></i>09:00 AM - 10:00 PM</li>
 							</ul>
 						</div>
 						<br/>
@@ -583,6 +782,9 @@
 								<li><i class="fa fa-globe"></i><a href="contact.html">Mira Road</a></li>
                                 <li><i class="fa fa-globe"></i><a href="contact.html">Vashi</a></li>
 								<li><i class="fa fa-globe"></i><a href="contact.html">Malad</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Badlapur</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Thane</a></li>
+								<li><i class="fa fa-globe"></i><a href="contact.html">Chembur</a></li>
                             </ul>
 						</div>
                     </div>
@@ -669,9 +871,7 @@
 								<ul>
 									<li><i class="fa fa-globe"></i>Kalpataru Hospital,<br>First Floor, Ashoka Shopping Centre,<br>Near Jakat Naka Signal,<br> Virar West.</li>
 									<li><i class="fa fa-envelope"></i><a href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i>+91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>TUE & SAT</li>
-									<li><i class="fa fa-clock-o"></i>10:00 AM - 12:00 PM</li>
+									<li><i class="fa fa-phone"></i>+91-8779475032</li>
 								</ul>
 							</div>
 						</div>
@@ -683,9 +883,7 @@
  								<ul>
 									<li><i class="fa fa-globe"></i>Dhanwantari Manav Kalyan Hospital,<br>Ganesh Tower, B Patil Road, <br>Venkateshwar Nagar, Bhayander East,<br>Mira Bhayender - 401105.</li>
 									<li><i class="fa fa-envelope"></i><a href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat  </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
 								</ul>
 							</div>
 						</div>
@@ -697,9 +895,7 @@
  								<ul>
 									<li><i class="fa fa-globe"></i>Vashi Hospital and ICU 1 St Floor, <br>Above Babubhai Jagjivandas. <br>Devavrata Premises, Sector 17, <br>Vashi, Navi Mumbai - 400703.</li>
 									<li><i class="fa fa-envelope"></i><a href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat  </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
 								</ul>
 							</div>
 						</div>
@@ -711,10 +907,72 @@
  								<ul>
 									<li><i class="fa fa-globe"></i>DNA hospital, Rani Sati Rd, <br>Malad, Tapovan Housing Complex, <br>Pathan Wadi, Malad East, Mumbai 400097.</li>
 									<li><i class="fa fa-envelope"></i><a href="enquiry.html">care@sanjivanicancercentre.com</a></li>
-									<li><i class="fa fa-phone"></i> +91-8779475032 / 8420030304 / 022-25407474 </li>
-									<li><i class="fa fa-calendar"></i>Tue, Thur, Sat  </li>
-									<li><i class="fa fa-clock-o"></i> 3 pm to 5 pm</li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
 								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Badlapur</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>New Dhanvantari Hospital, <br>567Q+MPG, near Registration Office
+										, <br>Surya Nagar, Katrap, Badlapur, Maharashtra 421503.</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Mira Road</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>Shree Mahalaxmi Hospital,<br>Ramdev Park, Mira Road East, <br>Mira Bhayandar,<br>Maharashtra 401105.
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Thane</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>VRINDAVAN HOSPITAL,<br> DEVASHREE GARDEN, 101&102, <br>Service Rd,<br>Rutu Park, Panchsheel Nagar, Thane West, Thane, Maharashtra 400601
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
+							</div>
+						</div>
+					</div>
+						<div class="item">
+						<div class="img-part">
+							<div class="footer-title mb-10">
+								<h3>Chembur</h3>
+							</div>
+							<div class="widget-contact">
+								<ul>
+									<li><i class="fa fa-globe"></i>Surana Sethia Hospital,<br> Sion - Trombay Rd, Suman Nagar, <br>Chembur,<br>Mumbai, Maharashtra 400071.
+									</li>
+									<li><i class="fa fa-envelope"></i><a
+											href="enquiry.html">care@sanjivanicancercentre.com</a></li>
+									<li><i class="fa fa-phone"></i> +91-8779475032</li>
+							
 							</div>
 						</div>
 					</div>
@@ -788,5 +1046,25 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 		})();
 	</script>
+
+<!--Slider forr our team-->
+<script>
+	let allteamimg = document.querySelectorAll(".team-1")
+	let index = 0;
+	function slide() {
+		allteamimg.forEach(list=>{
+		list.style.display = "none"
+	})
+	allteamimg[index].style.display = "block"
+
+	index++
+	if(index >= allteamimg.length){
+		index = 0
+	}
+		
+	}
+	setInterval(slide,2000)
+
+</script>
 </body>
 </html>
